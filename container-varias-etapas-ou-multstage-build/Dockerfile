@@ -24,9 +24,9 @@ RUN build/build.sh
 CMD [ "/go/bin/kuard" ] 
 
 # ETAPA 2: Implantação
-FROM: alpine
+#FROM: alpine
 
-USER: nobody:nobody
-COPY --from=build /go/bin/kuard /kuard
+#USER: nobody:nobody
+#COPY --from=build /go/bin/kuard /kuard
 
-CMD [ "/kuard" ]
+#CMD [ "/kuard" ]
